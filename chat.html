@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&family=Viga&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fw-bold text-light" href="#">Página Principal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Manuales y tutoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Perfil de Usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">Organigrama de la empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="/chat.html" onClick="showChat()">Chat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-mobile">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex" id="contacto-activo">
+                            <img class="rounded-circle p-1" src="/assets/img/banner-home-personas-2022-10_m.png" alt="">
+                            <h3 class="text-start fs-5 fw-normal mx-2 padding-contacto text-dark">Nombre Apellido Uno</h3>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="contacto" id="contacto-1" onclick="seleccionarContacto(id); ">
+                            <img class="rounded-circle p-1" src="/assets/img/banner-home-personas-2022-10_m.png" alt="">
+                            <div class="contacto-nombre d-flex align-items-center">
+                                <h3 id="h3-1" class="text-start fs-5 fw-normal mx-2 fw-bold"
+                                    onclick="quitarNegrita(id);">Nombre Apellido Uno</h3>
+                            </div>
+                        </div>
+                        <div class="contacto" id="contacto-2" onclick="seleccionarContacto(id); ">
+                            <img class="rounded-circle p-1"
+                                src="/assets/img/f.elconfidencial.com_original_317_ae0_456_317ae0456e63bd37ce7fa809d5955672.png"
+                                alt="">
+                            <div class="contacto-nombre d-flex align-items-center">
+                                <h3 id="h3-2" class="text-start fs-5 fw-normal mx-2 fw-bold "
+                                    onclick="quitarNegrita(id);">Nombre Apellido Dos</h3>
+                            </div>
+                        </div>
+                        <div class="contacto" id="contacto-3" onclick="seleccionarContacto(id); ">
+                            <img class="rounded-circle p-1" src="/assets/img/photo-1438761681033-6461ffad8d80.png" alt="">
+                            <div class="contacto-nombre d-flex align-items-center">
+                                <h3 id="h3-3" class="text-start fs-5 fw-normal mx-2 fw-bold "
+                                    onclick="quitarNegrita(id);">Nombre Apellido Tres</h3>
+                            </div>
+                        </div>
+                        <div class="contacto" id="contacto-4" onclick="seleccionarContacto(id); ">
+                            <img class="rounded-circle p-1"
+                                src="/assets/img/que_piensa_una_persona_cuando_dejas_de_buscarla_5242_orig.jpg" alt="">
+                            <div class="contacto-nombre d-flex align-items-center">
+                                <h3 id="h3-4" class="text-start fs-5 fw-normal mx-2 fw-bold "
+                                    onclick="quitarNegrita(id);">Nombre Apellido Cuatro</h3>
+                            </div>
+                        </div>
+                        <div class="contacto" id="contacto-5" onclick="seleccionarContacto(id); ">
+                            <img class="rounded-circle p-1" src="/assets/img/retrato-joven-sonriente-gafas_171337-4842.png"
+                                alt="">
+                            <div class="contacto-nombre d-flex align-items-center">
+                                <h3 id="h3-5" class="text-start fs-5 fw-normal mx-2 fw-bold "
+                                    onclick="quitarNegrita(id);">Nombre Apellido Cinco</h3>
+                            </div>
+                        </div>
+                        <form class="d-flex py-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="button " type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="menu-desktop col-md-3 background-contactos">
+                <form class="d-flex py-3 " role="search" id="busqueda-contactos">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button" type="submit">Search</button>
+                </form>
+                <div class="contacto" id="contacto-1" onclick="seleccionarContactoDesktop(id); ">
+                    <img class="rounded-circle p-1" src="/assets/img/banner-home-personas-2022-10_m.png" alt="">
+                    <div class="contacto-nombre d-flex align-items-center">
+                        <h3 id="h3d-1" class="text-start fs-5 fw-normal mx-2 fw-bold" onclick="quitarNegrita(id);">
+                            Nombre
+                            Apellido Uno</h3>
+                    </div>
+                </div>
+                <div class="contacto" id="contacto-2" onclick="seleccionarContactoDesktop(id); ">
+                    <img class="rounded-circle p-1"
+                        src="/assets/img/f.elconfidencial.com_original_317_ae0_456_317ae0456e63bd37ce7fa809d5955672.png"
+                        alt="">
+                    <div class="contacto-nombre d-flex align-items-center">
+                        <h3 id="h3d-2" class="text-start fs-5 fw-normal mx-2 fw-bold " onclick="quitarNegrita(id);">
+                            Nombre
+                            Apellido Dos</h3>
+                    </div>
+                </div>
+                <div class="contacto" id="contacto-3" onclick="seleccionarContactoDesktop(id); ">
+                    <img class="rounded-circle p-1" src="/assets/img/photo-1438761681033-6461ffad8d80.png" alt="">
+                    <div class="contacto-nombre d-flex align-items-center">
+                        <h3 id="h3d-3" class="text-start fs-5 fw-normal mx-2 fw-bold " onclick="quitarNegrita(id);">
+                            Nombre
+                            Apellido Tres</h3>
+                    </div>
+                </div>
+                <div class="contacto" id="contacto-4" onclick="seleccionarContactoDesktop(id); ">
+                    <img class="rounded-circle p-1"
+                        src="/assets/img/que_piensa_una_persona_cuando_dejas_de_buscarla_5242_orig.jpg" alt="">
+                    <div class="contacto-nombre d-flex align-items-center">
+                        <h3 id="h3d-4" class="text-start fs-5 fw-normal mx-2 fw-bold " onclick="quitarNegrita(id);">
+                            Nombre
+                            Apellido Cuatro</h3>
+                    </div>
+                </div>
+                <div class="contacto" id="contacto-5" onclick="seleccionarContactoDesktop(id); ">
+                    <img class="rounded-circle p-1" src="/assets/img/retrato-joven-sonriente-gafas_171337-4842.png" alt="">
+                    <div class="contacto-nombre d-flex align-items-center">
+                        <h3 id="h3d-5" class="text-start fs-5 fw-normal mx-2 fw-bold " onclick="quitarNegrita(id);">
+                            Nombre
+                            Apellido Cinco</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbox  col-md-9 background-chat">
+                <div class="col-md-12">
+                    <div class="contacto" id="contacto-activo-desktop" ">
+                        <img class="rounded-circle p-1" src="/assets/img/banner-home-personas-2022-10_m.png" alt="">
+                        <div class="contacto-nombre d-flex align-items-center">
+                            <h3 id="h3d-1" class="text-start fs-5 fw-normal mx-2 text-dark" >
+                                Nombre
+                                Apellido Uno</h3>
+                        </div>
+                    </div>
+                    <div class="chatbox-texto">
+                        <div class="row">
+                            <div class="msg-text pt-2  ms-2">
+                                <p class="ps-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="msg-text2 pe-3">
+                                <p class="ps-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis
+                                    rem
+                                    natus
+                                    doloremque aliquid, deserunt officiis, voluptatum odio similique mollitia nam veniam
+                                    exercitationem a consequuntur cupiditate vero perspiciatis magni animi?</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="msg-text2 pe-3">
+                                <p class="ps-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis
+                                    rem
+                                    natus
+                                    doloremque aliquid.
+                                </p>
+                            </div>
+                            <div class="text-center span">
+                                <span class="span-msg">17:35</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="msg-text ms-2">
+                                <p class="ps-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis
+                                    rem
+                                    natus
+                                    doloremque aliquid, deserunt officiis.
+                                </p>
+                            </div>
+                            <div class="text-center span">
+                                <span class="span-msg">17:43</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-2" id="barra-de-chat">
+                        <form action="">
+                            <input class="input" type="text" name="" id="">
+                            <button type="submit" class="button" id="boton-enviar"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send col py-1"
+                                    width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                    <path
+                                        d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                                </svg>
+                            </button>
+                            <button class="button dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-paperclip col py-1" width="30" height="30"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5" />
+                                </svg>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Imagen</a></li>
+                                    <li><a class="dropdown-item" href="#">Video</a></li>
+                                    <li><a class="dropdown-item" href="#">Documentos</a></li>
+                                </ul>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
